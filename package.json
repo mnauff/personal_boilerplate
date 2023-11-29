@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "next dev",
+        "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
         "build": "next build",
         "start": "next start",
         "check-types": "tsc --pretty --noEmit",
@@ -33,6 +33,7 @@
         "@typescript-eslint/eslint-plugin": "^5.59.7",
         "@typescript-eslint/parser": "^5.59.7",
         "clsx": "^1.2.1",
+        "cross-env": "^7.0.3",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.41.0",
         "eslint-config-prettier": "^8.8.0",
